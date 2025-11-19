@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Common Css */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Arvo", serif;
+
+}
+
+/* header */
+.navbar-brand{
+    font-size: 1.5 rem;
+}
+.nav-link{
+    font-size: 1.2 rem;
+}
+
+
+
+/* home - New Elegant Styling */
+#home {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 56px; /* Space for fixed navbar */
+}
+#particles-js {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    /* Changed background to a dark, professional navy blue/grey */
+    background: #1f2833; 
+    z-index: 1;
+}
+
+#home .container {
+    height: 100%;
+}
+
+/* Text Container Styling */
+.hero-text {
+    z-index: 2;
+    position: relative;
+}
+
+#animated-text {
+    /* Used the same ID for animation target */
+    font-size: 3.5rem; /* Slightly reduced for better fit */
+    line-height: 1.2;
+    color: #fff;
+    font-weight: bold;
+    min-height: 10rem; /* Ensure space while text is loading */
+}
+
+/* Learn More Button - Style adjusted for left alignment */
+#learn-more {
+    padding: .6rem 1.5rem;
+    max-width: fit-content;
+    color: #fff;
+    /* Margin reset to align left/center */
+    margin: 1.5rem 0 0 0; 
+    display: inline-block; /* Allows max-width to work */
+    border: 2px solid #fff;
+    border-radius: 5px; /* Less rounded, more professional */
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+#learn-more:hover {
+    background-color: #527cec; /* Primary color highlight */
+    border-color: #527cec;
+}
+
+
+/* Profile Photo Styling */
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border: 8px solid #364455; /* Subtle border that contrasts with background */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #animated-text {
+        font-size: 2.2rem;
+        text-align: center;
+        min-height: 8rem;
+    }
+    
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    
+    /* Center the button on mobile */
+    #learn-more {
+        margin: 1.5rem auto 0 auto; 
+    }
+}
+
+/* about */
+#about {
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+    /* Clean, professional background: Very light grey/off-white */
+    background: #f8f9fa; 
+}
+
+/* Container Box for Text and Image */
+.about-content-box {
+    background: #ffffff; /* White background for the content box itself */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow for elegance */
+}
+
+#about h2.title {
+    color: #333; /* Darker color for professional look */
+    margin-bottom: 20px;
+}
+
+/* Styling for the new about text paragraphs */
+.about-text {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1rem;
+    text-align: left !important; /* Forces left alignment */
+    margin-bottom: 15px;
+}
+
+/* Professional Image Styling */
+.about-photo-wrapper {
+    max-width: 280px;
+    border: 5px solid #e9ecef; /* Light border */
+    border-radius: 8px; /* Slightly rounded edges */
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-photo-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.professional-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Optional: Call to Action Button */
+.about-cta {
+    background-color: #527cec; /* Your primary color */
+    border-color: #527cec;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.about-cta:hover {
+    background-color: #4060b8;
+    border-color: #4060b8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content-box {
+        padding: 20px;
+    }
+    .about-photo-wrapper {
+        max-width: 200px;
+        margin: 20px auto 0 auto; /* Center image on mobile */
+    }
+    .about-text {
+        text-align: center !important; /* Center text on mobile for better flow */
+    }
+}
+/* Resume Section Styling */
+#resume {
+    background: #f8f9fa;        /* Light clean background */
+    padding: 80px 0;
+}
+
+#resume h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#resume p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Centered Box/Card Style */
+#resume .resume-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Download Button Styling */
+#resume a.btn-download {
+    background: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#resume a.btn-download:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Skill Icons Layout */
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.skill-item {
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-8px);
+}
+
+.skill-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: 0.3s ease-in-out;
+}
+
+.skill-item:hover .skill-logo {
+    transform: scale(1.1);
+}
+
+.skill-item p {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+.skill-icons {
+    display: flex;
+    flex-wrap: nowrap; /* prevents moving to next line */
+    gap: 20px; /* space between items */
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .tab-button.active,
+  .tab-button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  /* File Items */
+  .file-item {
+    margin-bottom: 18px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+  }
+  
+  .file-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  
+  .file-item a {
+    text-decoration: none;
+    font-size: 1.05em;
+    color: #007bff;
+    font-weight: 600;
+  }
+  
+  .file-item a:hover {
+    text-decoration: underline;
+  }
+
+  
+  /* contact */
+  #contact{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  
+  #contact form{
+    width: 100%;
+  }
+  
+  #contact form .submit-message{
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #527cec;
+    color: #fff;
+  }
+
+  /* Footer */
+.footer {
+  background: #111;
+  padding: 40px 10px;
+  color: #fff;
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+/* Contact Info */
+.footer-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Scroll Up Button */
+.back-to-top i {
+  font-size: 40px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.back-to-top i:hover {
+  color: #0d6efd;
+  transform: translateY(-5px);
+}
+
+/* Social Icons */
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li a {
+  font-size: 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-links li a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+
+/* Footer bottom */
+.footer-bottom p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+
+  .back-to-top {
+    margin: 20px 0;
+  }
+}
